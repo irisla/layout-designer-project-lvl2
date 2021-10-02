@@ -1,0 +1,87 @@
+header {
+    width: 100%;
+    position: absolute;
+    padding-top: 25px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.logo-img {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img img {
+    width: 24px;
+    height: 24px;
+    flex-grow: 3;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo-title-music {
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.list li {
+    list-style: none;
+    padding: 24px;
+}
+
+.list li a {
+    display: block;
+    color: #cacaca;
+    text-decoration: none;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background: #3c3b3d;
+    border-radius: 50px;
+    width: 248px;
+    height: 25px;
+    position: relative;
+    top: 25px;
+}
+
+.search-title {
+    font-size: 13.3px;
+    color: #757575;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+// ####################################
+// Медиазапросы
+
+@media(max-width: 1240px) {
+
+}
+
+// ##############################################
+
+@media(max-width: 925px) {
+
+}
+
+// #################################################
+@media(max-width: 600px) {
+    
+}
