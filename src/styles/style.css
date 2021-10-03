@@ -125,6 +125,155 @@ header {
   padding-left: 10px;
 }
 
+@media (max-width: 1240px) {
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+}
+/* -------------------------------------- */
+@media (max-width: 900px) {
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+/* ------------------------------------ */
+@media (max-width: 680px) {
+  .container {
+    width: 100%;
+    min-height: auto;
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .logo-img {
+    margin-right: 10px;
+  }
+
+  .form input {
+    width: 100%;
+  }
+
+  .list {
+    width: 40%;
+  }
+
+  .list li {
+    padding: 0;
+  }
+
+  .logo-title {
+    margin-right: 100px;
+  }
+}
+/* --------------------------------- */
+@media (min-width: 380px) and (max-width: 580px) {
+  .container {
+    width: 100%;
+    min-height: auto;
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .logo-img {
+    position: relative;
+    left: -91px;
+  }
+
+  .logo-title {
+    position: relative;
+    left: -87px;
+  }
+
+  .logo-title-music {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .menu {
+    position: relative;
+    left: -23px;
+    top: 13px;
+  }
+
+  .search {
+    width: 100%;
+    position: relative;
+    top: 25px;
+  }
+
+  .wrap-p {
+    position: relative;
+    top: -15px;
+  }
+
+  .wrap-p p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .form {
+    position: relative;
+    top: -18px;
+  }
+
+  .form input {
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .form-button {
+    margin-top: 0;
+  }
+
+  .wrap {
+    position: relative;
+    top: 70px;
+  }
+}
 .section-first {
   background-image: url("../images/banner.png");
   background-position: center;
