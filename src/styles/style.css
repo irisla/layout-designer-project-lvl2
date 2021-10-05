@@ -35,246 +35,81 @@ h2 {
   text-transform: uppercase;
 }
 
-.mobile-h1 {
-  font-size: 30px;
-  line-height: 45px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.mobile-h2 {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-header {
+.header {
   width: 100%;
-  position: absolute;
   padding-top: 25px;
+  position: absolute;
 }
 
-.nav {
+.header-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  width: 100%;
 }
 
-.logo-img {
-  display: flex;
-  align-items: center;
+.img {
+  margin-right: 16px;
+  max-width: 24px;
+  max-height: 24px;
 }
 
-.logo-img img {
-  width: 24px;
-  height: 24px;
-  flex-grow: 3;
-}
+.music {
+  margin-right: 100px;
 
-.logo-title {
-  display: flex;
-  align-items: center;
-}
-
-.logo-title-music {
   font-size: 11px;
   line-height: 16px;
   text-transform: uppercase;
   color: #fff;
 }
 
-.list {
+.menu {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
+  padding: 0;
 }
 
-.list li {
+.menu li {
   list-style: none;
-  padding: 24px;
+  padding-right: 24px;
 }
 
-.list li a {
-  display: block;
+li a {
   color: #cacaca;
   text-decoration: none;
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
 }
 
-.search {
-  display: flex;
-  align-items: center;
+.header-search {
   background: #3c3b3d;
   border-radius: 50px;
-  width: 248px;
-  height: 25px;
-  position: relative;
-  top: 25px;
+  margin-left: 300px;
 }
 
-.search-title {
-  font-size: 13.3px;
-  color: #757575;
-  text-transform: uppercase;
+.header-input {
+  background: none;
+  min-width: 248px;
+  min-height: 25px;
   padding-left: 10px;
+  color: #fff;
 }
 
-@media (max-width: 1240px) {
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-size: 50px;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
+.header-input::placeholder {
+  font-size: 13.3px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #757575;
 }
-/* -------------------------------------- */
-@media (max-width: 900px) {
-  .container {
-    max-width: 700px;
-    margin: 0 auto;
-  }
 
-  h1 {
-    font-size: 40px;
-  }
 
-  h2 {
-    font-size: 28px;
-  }
-}
-/* ------------------------------------ */
-@media (max-width: 680px) {
-  .container {
-    width: 100%;
-    min-height: auto;
-    padding: 0 20px;
-  }
+/* ---------------------------------- */
+/* Первая секция */
 
-  h1 {
-    font-size: 35px;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
-
-  .nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .logo-img {
-    margin-right: 10px;
-  }
-
-  .form input {
-    width: 100%;
-  }
-
-  .list {
-    width: 40%;
-  }
-
-  .list li {
-    padding: 0;
-  }
-
-  .logo-title {
-    margin-right: 100px;
-  }
-}
-/* --------------------------------- */
-@media (min-width: 380px) and (max-width: 580px) {
-  .container {
-    width: 100%;
-    min-height: auto;
-    padding: 0 20px;
-  }
-
-  h1 {
-    font-size: 30px;
-    line-height: 45px;
-  }
-
-  h2 {
-    font-size: 18px;
-    line-height: 27px;
-  }
-
-  .logo-img {
-    position: relative;
-    left: -91px;
-  }
-
-  .logo-title {
-    position: relative;
-    left: -87px;
-  }
-
-  .logo-title-music {
-    font-weight: 700;
-    font-size: 11px;
-    line-height: 13px;
-  }
-
-  .menu {
-    position: relative;
-    left: -23px;
-    top: 13px;
-  }
-
-  .search {
-    width: 100%;
-    position: relative;
-    top: 25px;
-  }
-
-  .wrap-p {
-    position: relative;
-    top: -15px;
-  }
-
-  .wrap-p p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .form {
-    position: relative;
-    top: -18px;
-  }
-
-  .form input {
-    width: 100%;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .form-button {
-    margin-top: 0;
-  }
-
-  .wrap {
-    position: relative;
-    top: 70px;
-  }
-}
-.section-first {
+.page-description {
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
@@ -282,25 +117,30 @@ header {
   padding: 200px 0;
 }
 
-.wrap {
-  min-height: 100%;
+.description-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.wrap-h1,
-.wrap-h2,
-.wrap-p,
-.wrap-form {
+.description-h2 {
+  width: 50%;
   text-align: center;
 }
 
-.wrap p {
+.description-p {
   margin-top: 31px;
   margin-bottom: 17px;
 }
 
 .form {
   max-width: 570px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form input {
@@ -325,7 +165,7 @@ input:first-child {
   margin-right: 24px;
 }
 
-.form button {
+.form .button {
   width: 100%;
   height: 57px;
   padding: 20px 30px;
@@ -338,8 +178,142 @@ input:first-child {
   background: #34c176;
 }
 
-body {
+
+/* -------------------------------------- */
+/* ------------------------------------------- */
+/* Медиазапросы для первой части */
+
+@media(min-width: 900px) and (max-width: 1240px) {
+  .header-container,
+  .description-container {
+    max-width: 1000px;
+    padding: 0 5px 0 5px;
+  }
+
+h1 {
+  font-size: 45px;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 29px;
+  line-height: 42px;
+}
+
+.header-search {
+  margin-left: 30px;
+}
+
+  .header-input {
+    min-width: 200px;
+  }
+}
+/* -------------------------------------- */
+@media(min-width: 600px) and (max-width: 900px) {
+  .header-container,
+  .description-container {
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+    padding: 0 5px 0 5px;
+  }
+
+.menu li {
+  padding-right: 8px;
+}
+  
+
+.header-search {
+  margin: 45px auto 0 auto;
+}
+
+.header-input {
+  min-width: 300px;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 45px;
+  margin: 0 auto 0 auto;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 auto 0 auto;
+}
+
+.description-p {
+margin-left: auto;
+margin-right: auto;
+}
+}
+
+@media(min-width: 400px) and (max-width: 600px) {
+.header-container,
+.description-container {
+  width: 100%;
+  padding: 0 20px 0 20px;
+  flex-direction: column;
+}
+
+.description-container {
+  margin-top: 78px;
+}
+
+
+.music {
+  position: relative;
+  top: -23px;
+  left: 40px;
+}
+
+.menu {
+  flex-direction: column;
+  position: relative;
+  top: -8px;
+  margin-bottom: 18px;
+}
+
+.menu li {
+  padding-bottom: 3px;
+  height: 17px;
+}
+
+li a {
+  line-height: 13px;
+}
+
+.header-search {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 27px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description-p {
+  font-size: 16px;
+  line-height: 24px;
+  text-indent: 13px;
+  text-align: center;
+}
+
+.form input {
   width: 100%;
 }
 
-/*# sourceMappingURL=style.css.map */
+
+}
+
+
