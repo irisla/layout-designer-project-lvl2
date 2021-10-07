@@ -19,6 +19,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: #fff;
+  background: #08020D;
 }
 
 h1 {
@@ -315,9 +316,6 @@ input:first-child {
 /* 2222222222222222222222222222222222222222222 */
 /* Вторая секция */
 
-.main {
-  background: #08020d;
-}
 
 .container {
   max-width: 1200px;
@@ -509,8 +507,229 @@ article {
 /* 33333333333333333333333333333333333333333 */
 /* Третья секция */
 
+#page-news h2 {
+  font-size: 38px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 48px;
+  font-weight: 700;
+}
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.one {
+  margin-bottom: 65px;
+}
 
+.photo-one {
+  margin-right: 50px;
+  width: 575px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  width: 575px;
+}
+
+.news-body h3 {
+  font-size: 30px;
+  line-height: 45px;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.news-body p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #cacaca;
+  margin-bottom: 25px;
+}
+
+.news-author p {
+  display: inline-block;
+  margin-right: 16px;
+}
+ 
+.news-author {
+  margin-bottom: 32px;
+}
+
+.news-author img {
+  margin-right: 16px;
+}
+
+.news-author .author {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #f89202;
+  position: relative;
+  top: -6px;
+}
+
+.news-author .data {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 19px;
+  color: #cacaca;
+  position: relative;
+  top: -6px;
+}
+
+.btn {
+  max-width: 135px;
+  max-height: 53px;
+  padding: 16px 30px 16px 30px;
+
+  border: solid 1px #fff;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.btn a {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #cacaca;
+}
+
+.photo-two {
+  margin-right: 0;
+  margin-left: 50px;
+}
+
+/* ------------------------------------- */
+/* ----------------------------------------- */
+/* Медиазапросы для третьей секции */
+
+@media (min-width: 900px) and (max-width: 1240px) {
+.container {
+  max-width: 1000px;
+}
+
+.photo-one {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.photo-two {
+  margin-left: auto;
+  margin-right: auto;
+  order: 1;
+}
+
+.flex-column {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.down {
+  margin-right: auto;
+  margin-left: auto;
+  order: 2;
+}
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .container {
+    max-width: 800px;
+    padding: 100px 2px 0 2px;
+  }
+
+  .photo-one {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .photo-two {
+    margin-left: auto;
+    margin-right: auto;
+    order: 1;
+  }
+  
+  .flex-column {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .down {
+    margin-right: auto;
+    margin-left: auto;
+    order: 2;
+  }
+
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 100px 20px 0 20px;
+  }
+  
+  #page-news h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .photo-one {
+    margin-bottom: 50px;
+  }
+
+.news-body h3 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.news-body p {
+  margin-bottom: 24px;
+}
+
+.news-author {
+  margin-bottom: 48px;
+}
+
+.news-author img {
+  width: 19px;
+  height: 19px;
+}
+
+  .photo-one {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .photo-two {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    order: 1;
+  }
+
+  .flex-column {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .down {
+    margin-right: auto;
+    margin-left: auto;
+    order: 2;
+  }
+}
 
 
