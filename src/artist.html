@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портал «Music Box». Михайлов Вячеслав.</title>
+    <link rel="stylesheet" href="styles/style-artist.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <nav>
+            <div class="header-container">
+                <img class="img" src="images/logo.svg" alt="логотип в виде скрипичного ключа">
+                <p class="music">Music Box</p>
+                <ul class="menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Исполнители</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <form class="header-search" action="#" method="get">
+                    <input class="header-input" name="search" placeholder="поиск" type="search">
+                </form>
+            </div>
+        </nav>
+    </header>
+    <section class="page-description">
+        <div class="description-container">
+            <h1 class="description-h1">Morten Harket</h1>
+            <p class="description-p">24 875 поклонников</p>
+
+            <div class="form-button">
+                <form class="form-page-description" action="#">
+                    <button class="btn btn-page-desc" type="submit"><img class="svg-1" src="images/play-button.svg">
+                        <p class="svg-p-1">микс</p>
+                    </button>
+                    <button class="btn btn-page-desc" type="submit"><img class="svg-2" src="images/heart.svg">
+                        <p class="svg-p-2">в избранное</p>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>

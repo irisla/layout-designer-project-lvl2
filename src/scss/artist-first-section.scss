@@ -1,0 +1,91 @@
+.page-description {
+    background-image: url("../images/Morten Harket.png");
+    min-height: 750px;
+}
+  
+.description-container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+  
+.description-p {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+  
+.form-page-description {
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .btn-page-desc {
+        width: 200px;
+        height: 62px;
+        font-size: 12.8px;
+        line-height: 19px;
+        color: $font;
+        margin-top: 24px;
+        background: $purple;
+        border: none;
+        margin-right: 16px;
+    }
+}
+
+.btn-page-desc {
+    .play-button {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: -62px;
+        top: 5px;
+    }
+    
+    .svg-1 {
+        filter: invert(1) sepia(0) saturate(1) hue-rotate(161deg);
+        height: 20px;
+        width: 20px;
+        position: relative;
+        left: -51px;
+    }
+
+    .svg-2 {
+        filter: invert(1) sepia(0) saturate(1) hue-rotate(161deg);
+        height: 20px;
+        width: 20px;
+        position: relative;
+        left: -51px;
+    }
+    
+    .svg-p-1 {
+        position: relative;
+        top: -22px;
+        left: -2px;
+        font-size: 12.8px;
+        line-height: 150%;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+    .svg-p-2 {
+        position: relative;
+        top: -22px;
+        left: 15px;
+        font-size: 12.8px;
+        line-height: 150%;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+}
+// -----------------------------------------------
+// Медиазапросы
+@media (min-width: 900px) and (max-width: 1240px) {
+    .description-container {
+      max-width: 1000px;
+      padding: 0 5px 0 5px;
+    }
+  
+    h1 {
+      font-size: 45px;
+      line-height: 60px;
+    }
+  }

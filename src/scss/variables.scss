@@ -69,8 +69,13 @@ $font: #fff;
     border: solid 1px $font;
     background: none;
   }
-  
-
+// -------------------------------------
+// Первая секция обеих страниц  
+.page-description {
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+}
 
 
 
