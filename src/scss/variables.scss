@@ -12,63 +12,66 @@ $purple: #5328a1;
 $red: #95390c;
 $font: #fff;
    
-// #######################################################################
-* {
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-}
 
 // #######################################################################
-// Шрифт проекта
-@font-face {
-    font-weight: 400;
-    font-family: 'Roboto';
-    src: url(../fonts/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-weight: 700;
-    font-family: 'Roboto';
-    src: url(../fonts/Roboto-Bold.ttf);
-}
-
+// Шаблонные селеекторы. Подключаются через @extend
+// ------------------------------------------------
+// Шрифт
 %font {
     font-family: Roboto, sans-serif;
     font-size: 18px;
     line-height: 1.5;
     color: $font;
 }
-// ########################################################################
-// Заголовки для компьютера
-
-h1 {
+// ---------------------------------------------------
+// Заголовки
+%h1 {
     font-size: 60px;
     line-height: 90px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-h2 {
+%h2 {
     font-size: 38px;
     line-height: 57px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-// Заголовки для мобильника
-
-.mobile-h1 {
+// Для мобильной версии
+%mobile-h1 {
     font-size: 30px;
     line-height: 45px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.mobile-h2 {
+%mobile-h2 {
     font-size: 18px;
     line-height: 27px;
     font-weight: bold;
     text-transform: uppercase;
 }
-// ###########################################################################
+// ------------------------------------------------------
+// Контейнер
+%container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+// --------------------------------------
+// Кнопка
+.btn {
+    padding: 20px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: solid 1px $font;
+    background: none;
+  }
+  
+
+
+
+
+

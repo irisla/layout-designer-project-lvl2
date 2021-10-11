@@ -1,228 +1,138 @@
-header {
-    width: 100%;
-    position: absolute;
-    padding-top: 25px;
+.header {
+  width: 100%;
+  padding-top: 25px;
+  position: absolute;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
+.header-container {
+  @extend %container;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.logo-img {
-    display: flex;
-    align-items: center;
+.img {
+  margin-right: 16px;
+  max-width: 24px;
+  max-height: 24px;
 }
 
-.logo-img img {
-    width: 24px;
-    height: 24px;
-    flex-grow: 3;
+.music {
+  margin-right: 100px;
+
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $font;
 }
 
-.logo-title {
-    display: flex;
-    align-items: center;
-}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
 
-.logo-title-music {
-    font-size: 11px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.list {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-}
-
-.list li {
+  li {
     list-style: none;
-    padding: 24px;
+    padding-right: 24px;
+  }
 }
 
-.list li a {
-    display: block;
-    color: #cacaca;
-    text-decoration: none;
+li a {
+  color: $dark-gray;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
 }
 
-.search {
-    display: flex;
-    align-items: center;
-    background: #3c3b3d;
-    border-radius: 50px;
-    width: 248px;
-    height: 25px;
-    position: relative;
-    top: 25px;
+.header-search {
+  background: $dark;
+  border-radius: 50px;
+  margin-left: 300px;
 }
 
-.search-title {
+.header-input {
+  background: none;
+  min-width: 248px;
+  min-height: 25px;
+  padding-left: 10px;
+  color: $font;
+
+  &::placeholder {
     font-size: 13.3px;
-    color: #757575;
+    line-height: 15px;
     text-transform: uppercase;
-    padding-left: 10px;
+    color: #757575;
+  }
 }
-// ####################################
+// --------------------------------------------
 // Медиазапросы
+@media (min-width: 900px) and (max-width: 1240px) {
+  .header-container {
+    max-width: 1000px;
+    padding: 0 5px 0 5px;
+  }
 
-@media(max-width: 1240px) {
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-  
-    h1 {
-      font-size: 50px;
-    }
-    
-    h2 {
-      font-size: 32px;
-    }
+  .header-search {
+    margin-left: 30px;
   }
-  
-  
-  
-  /* -------------------------------------- */
-    @media(max-width: 900px) {
-    .container {
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    
-    h1 {
-      font-size: 40px;
-    }
-    
-    h2 {
-      font-size: 28px;
-    } 
-  } 
-  /* ------------------------------------ */
-  @media(max-width: 680px) {
-  .container {
+
+  .header-input {
+    min-width: 200px;
+  }
+}
+/* -------------------------------------- */
+@media (min-width: 600px) and (max-width: 900px) {
+  .header-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 5px 0 5px;
+  }
+
+  .menu li {
+    padding-right: 8px;
+  }
+
+  .header-search {
+    margin: 45px auto 0 auto;
+  }
+
+  .header-input {
+    min-width: 300px;
+  }
+}
+/* -------------------------------------------- */
+@media (min-width: 400px) and (max-width: 600px) {
+  .header-container {
     width: 100%;
-    min-height: auto;
-    padding: 0 20px;
+    padding: 0 20px 0 20px;
+    flex-direction: column;
   }
-  
-  h1 {
-    font-size: 35px;
-  }
-  
-  h2 {
-    font-size: 22px;
-  } 
-  
-  .nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-  
-  }
-  
-  .logo-img {
-    margin-right: 10px;
-  }
-  
-  .form input {
-    width: 100%;
-  }
-  
-  .list {
-    width: 40%;
-  }
-  
-  .list li {
-    padding: 0;
-  }
-  
-  .logo-title {
-    margin-right: 100px;
-  }
-  
-  }
-  /* --------------------------------- */
-  @media(min-width: 380px) and (max-width: 580px) {
-    .container {
-      width: 100%;
-      min-height: auto;
-      padding: 0 20px;
-    }
-    
-    h1 {
-      font-size: 30px;
-      line-height: 45px;
-    }
-    
-    h2 {
-      font-size: 18px;
-      line-height: 27px;
-    } 
-  
-  .logo-img {
+
+  .music {
     position: relative;
-    left: -91px;
+    top: -23px;
+    left: 40px;
   }
-  
-  .logo-title {
+
+  .menu {
+    flex-direction: column;
     position: relative;
-    left: -87px;
+    top: -8px;
+    margin-bottom: 18px;
   }
-  
-  .logo-title-music {
-    font-weight: 700;
-    font-size: 11px;
+
+  .menu li {
+    padding-bottom: 3px;
+    height: 17px;
+  }
+
+  li a {
     line-height: 13px;
   }
-  
-  .menu {
-    position: relative;
-    left: -23px;
-    top: 13px;
-  }
-  
-  .search {
+
+  .header-search {
     width: 100%;
-    position: relative;
-    top: 25px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  .wrap-p {
-    position: relative;
-    top: -15px;
-  }
-  
-  .wrap-p p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  
-  .form {
-    position: relative;
-    top: -18px;
-  }
-  
-  .form input {
-    width: 100%;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-  }
-  
-  .form-button {
-    margin-top: 0;
-  }
-  
-  .wrap {
-    position: relative;
-    top: 70px;
-  }
-  
-  }
+}

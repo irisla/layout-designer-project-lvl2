@@ -1,0 +1,124 @@
+#page-app {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.count-2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    column-count: 2;
+    column-gap: 144px;
+
+    h2 {
+        text-align: center;
+        column-span: all;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 64px;
+    }
+}
+
+.count-text {
+    min-width: 600px;
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        color: $dark-gray;
+        margin-bottom: 16px;
+    }
+}
+
+.btn-page-app {
+    width: 131px;
+    height: 53px;
+    background: $red;
+    border-radius: 32px;
+    border: none;
+    padding: 16px 40px 16px 40px;
+
+    a {
+        font-weight: 400;
+        font-size: 12.8px;
+        line-height: 19px;
+        color: $font;
+        text-transform: none;
+        text-decoration: none;
+    }
+}
+
+/* ------------------------------------------------------ */
+/* -------------------------------------------------------- */
+/* Медиазапросы для четвертой секции */
+
+@media (min-width: 900px) and (max-width: 1240px) {
+    .count-2 {
+        max-width: 1000px;
+        padding: 0 10px 0 10px;
+        column-gap: 240px;
+    }
+
+    .count-text {
+        min-width: 506px;
+    }
+
+    .count-img {
+        width: 300px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .count-2 {
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px 0 10px;
+    }
+
+    .count-text {
+        order: 2;
+        width: 600px;
+    }
+
+    .count-img {
+        order: 1;
+        width: 333px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+    .count-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px 0 20px;
+
+        h2 {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 27px;
+            margin-bottom: 48px;
+        }
+    }
+
+    .count-text {
+        order: 2;
+        min-width: 374px;
+        margin-bottom: 15px;
+    }
+
+    .count-img {
+        order: 1;
+        width: 333px;
+        margin-bottom: 16px;
+    }
+
+    .btn-page-app {
+        margin-bottom: 100px;
+    }
+}

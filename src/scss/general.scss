@@ -1,7 +1,40 @@
 // Файл для базовых стилей проекта, которые не привязаны к конкретной секции проекта.
 // ###############################################
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  @extend %font;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto; 
+}
+
+h1 {
+  @extend %h1;
+}
+
+h2 {
+  @extend %h2;
+}
 
