@@ -1,0 +1,239 @@
+.title-discography {
+    @extend %h2;
+    margin-top: 100px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-page-discography {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    grid-gap: 25px 50px;
+}
+
+.img-discography {
+    width: 250px;
+    height: 250px;
+}
+
+.img-discography-one {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.img-discography-two {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.img-discography-three {
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+}
+
+.img-discography-four {
+    grid-row: 1 / span 1;
+    grid-column: 4 / span 1;
+}
+
+.img-discography-five {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.img-discography-six {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.h3-discography {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: $font;
+    margin-top: 268px;
+}
+
+.h3-discography-one {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    
+}
+
+.h3-discography-two {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.h3-discography-three {
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+}
+
+.h3-discography-four {
+    grid-row: 1 / span 1;
+    grid-column: 4 / span 1;
+}
+
+.h3-discography-five {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.h3-discography-six {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.p-discography {
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray;
+    margin-top: 290px;
+}
+
+.p-discography-one {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.p-discography-two {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.p-discography-three {
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+}
+
+.p-discography-four {
+    grid-row: 1 / span 1;
+    grid-column: 4 / span 1;
+}
+
+.p-discography-five {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.p-discography-six {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+
+@media (min-width: 400px) and (max-width: 600px) {
+    .grid-page-discography {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .img-discography {
+        width: 137px;
+        height: 137px;
+    }
+    
+    .img-discography-one {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .img-discography-two {
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    .img-discography-three {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .img-discography-four {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    .img-discography-five {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .img-discography-six {
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    .h3-discography {
+        margin-top: 155px;
+    }
+    
+    .h3-discography-one {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .h3-discography-two {
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    .h3-discography-three {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .h3-discography-four {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    .h3-discography-five {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .h3-discography-six {
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    .p-discography {
+        margin-top: 190px;
+    }
+    
+    .p-discography-one {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .p-discography-two {
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    .p-discography-three {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .p-discography-four {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    .p-discography-five {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .p-discography-six {
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 1;
+    }
+}

@@ -1,24 +1,22 @@
-#page-popular-track {
-    // width: 100vw;
-    // min-height: 420px;
+.container {
+    margin-top: 100px;
+    @extend %container;
 }
 
 .title-popular-track {
-    @extend %h2;
-    margin-top: 100px;
     margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
 
     h2 {
-        padding-left: 228px;
+        @extend %h2;
     }
 }
 
 .grid-page-popular-track {
-    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    margin: 0 auto;
     grid-gap: 25px 5px;
 }
 
@@ -57,6 +55,40 @@
     grid-column: 7 / span 1;
 }
 
+.info-track {
+    margin-left: -30px;
+}
+
+.info-track-one {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.info-track-two {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.info-track-three {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.info-track-four {
+    grid-row: 1 / span 1;
+    grid-column: 8 / span 1;
+}
+
+.info-track-five {
+    grid-row: 2 / span 1;
+    grid-column: 8 / span 1;
+}
+
+.info-track-six {
+    grid-row: 3 / span 1;
+    grid-column: 8 / span 1;
+}
+
 .h3-popular-track {
     font-weight: bold;
     font-size: 12.8px;
@@ -65,71 +97,16 @@
     color: $font;
 }
 
-.h3-popular-one {
-    grid-row: 1 / span 1;
-    grid-column: 2 / span 2;
-}
-
-.h3-popular-two {
-    grid-row: 2 / span 1;
-    grid-column: 2 / span 2;
-}
-
-.h3-popular-three {
-    grid-row: 3 / span 1;
-    grid-column: 2 / span 2;
-}
-
-.h3-popular-four {
-    grid-row: 1 / span 2;
-    grid-column: 8 / span 2;
-}
-
-.h3-popular-five {
-    grid-row: 2 / span 1;
-    grid-column: 8 / span 2;
-}
-
-.h3-popular-six {
-    grid-row: 3 / span 1;
-    grid-column: 8 / span 2;
-}
-
 .p-popular-track {
     font-size: 12.8px;
     line-height: 19px;
     color: $gray;
-    margin-top: 15px;
 }
 
-.p-popular-one {
-    grid-row: 1 / span 1;
-    grid-column: 2 / span 1;
-}
-
-.p-popular-two {
-    grid-row: 2 / span 1;
-    grid-column: 2 / span 1;
-}
-
-.p-popular-three {
-    grid-row: 3 / span 1;
-    grid-column: 2 / span 1;
-}
-
-.p-popular-four {
-    grid-row: 1 / span 1;
-    grid-column: 8 / span 1;
-}
-
-.p-popular-five {
-    grid-row: 2 / span 1;
-    grid-column: 8 / span 1;
-}
-
-.p-popular-six {
-    grid-row: 3 / span 1;
-    grid-column: 8 / span 1;
+.time-popular-track {
+    font-size: 12.8px;
+    line-height: 19px;
+    color: $gray;
 }
 
 .time-popular-track-one {
@@ -164,133 +141,103 @@
 
 @media (min-width: 400px) and (max-width: 600px) {
     #page-popular-track {
-        padding: 0 20px 0 20px ;
+        padding: 0 20px 0 20px;
     }
 
     .title-popular-track h2 {
-        padding-left: 0;
+        font-size: 18px;
+        line-height: 27px;
     }
-    
-    .grid-page-popular-track {
-        grid-template-columns: repeat(12, auto);
-        grid-template-rows: repeat(6, auto);
-    }
-    
+
     .img-popular-one {
         grid-row: 1 / span 1;
         grid-column: 1 / span 1;
     }
-    
+
     .img-popular-two {
-        grid-row: 2 / span 1;
-        grid-column: 1 / span 1;
-    }
-    
-    .img-popular-three {
         grid-row: 3 / span 1;
         grid-column: 1 / span 1;
     }
-    
-    .img-popular-four {
-        grid-row: 4 / span 1;
-        grid-column: 1 / span 1;
-    }
-    
-    .img-popular-five {
+
+    .img-popular-three {
         grid-row: 5 / span 1;
         grid-column: 1 / span 1;
     }
-    
+
+    .img-popular-four {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    .img-popular-five {
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
+    }
+
     .img-popular-six {
         grid-row: 6 / span 1;
         grid-column: 1 / span 1;
     }
 
-    .h3-popular-one {
+    .info-track {
+        margin-left: 10px;
+    }
+
+    .info-track-one {
         grid-row: 1 / span 1;
-        grid-column: 2 / span 2;
+        grid-column: 2 / span 4;
     }
-    
-    .h3-popular-two {
-        grid-row: 2 / span 1;
-        grid-column: 2 / span 2;
-    }
-    
-    .h3-popular-three {
+
+    .info-track-two {
         grid-row: 3 / span 1;
-        grid-column: 2 / span 2;
+        grid-column: 2 / span 4;
     }
-    
-    .h3-popular-four {
-        grid-row: 4 / span 1;
-        grid-column: 2 / span 2;
-    }
-    
-    .h3-popular-five {
+
+    .info-track-three {
         grid-row: 5 / span 1;
-        grid-column: 2 / span 2;
+        grid-column: 2 / span 4;
     }
-    
-    .h3-popular-six {
-        grid-row: 6 / span 1;
-        grid-column: 2 / span 2;
-    }
-    
-    .p-popular-one {
-        grid-row: 1 / span 1;
-        grid-column: 2 / span 1;
-    }
-    
-    .p-popular-two {
+
+    .info-track-four {
         grid-row: 2 / span 1;
-        grid-column: 2 / span 1;
+        grid-column: 2 / span 6;
     }
-    
-    .p-popular-three {
-        grid-row: 3 / span 1;
-        grid-column: 2 / span 1;
-    }
-    
-    .p-popular-four {
+
+    .info-track-five {
         grid-row: 4 / span 1;
-        grid-column: 2 / span 1;
+        grid-column: 2 / span 4;
     }
-    
-    .p-popular-five {
-        grid-row: 5 / span 1;
-        grid-column: 2 / span 1;
-    }
-    
-    .p-popular-six {
+
+    .info-track-six {
         grid-row: 6 / span 1;
-        grid-column: 2 / span 1;
+        grid-column: 2 / span 6;
     }
-    
+
     .time-popular-track-one {
         grid-row: 1 / span 1;
         grid-column: 12 / span 1;
     }
-    
+
     .time-popular-track-two {
-        grid-row: 2 / span 1;
-        grid-column: 12 / span 1;
-    }
-    
-    .time-popular-track-three {
         grid-row: 3 / span 1;
         grid-column: 12 / span 1;
     }
-    
-    .time-popular-track-four {
-        grid-row: 4 / span 1;
-        grid-column: 12 / span 1;
-    }
-    
-    .time-popular-track-five {
+
+    .time-popular-track-three {
         grid-row: 5 / span 1;
         grid-column: 12 / span 1;
     }
-    
+
+    .time-popular-track-four {
+        grid-row: 2 / span 1;
+        grid-column: 12 / span 1;
+    }
+
+    .time-popular-track-five {
+        grid-row: 4 / span 1;
+        grid-column: 12 / span 1;
+    }
+
     .time-popular-track-six {
         grid-row: 6 / span 1;
         grid-column: 12 / span 1;
