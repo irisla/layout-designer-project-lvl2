@@ -12,7 +12,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.title-popular-track h2, h2 {
+.title-discography, .title-popular-track h2, h2 {
   font-size: 38px;
   line-height: 57px;
   font-weight: bold;
@@ -544,6 +544,192 @@ li a {
   .time-popular-track-six {
     grid-row: 6/span 1;
     grid-column: 12/span 1;
+  }
+}
+.title-discography {
+  margin-bottom: 48px;
+}
+
+.grid-page-discography {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0 auto;
+  grid-gap: 25px 50px;
+}
+
+.img-discography {
+  width: 250px;
+  height: 250px;
+}
+
+.img-discography-one {
+  grid-row: 1/span 1;
+  grid-column: 1/span 1;
+}
+
+.img-discography-two {
+  grid-row: 1/span 1;
+  grid-column: 2/span 1;
+}
+
+.img-discography-three {
+  grid-row: 1/span 1;
+  grid-column: 3/span 1;
+}
+
+.img-discography-four {
+  grid-row: 1/span 1;
+  grid-column: 4/span 1;
+}
+
+.img-discography-five {
+  grid-row: 2/span 1;
+  grid-column: 1/span 1;
+}
+
+.img-discography-six {
+  grid-row: 2/span 1;
+  grid-column: 2/span 1;
+}
+
+.h3-discography {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.discography-info {
+  margin-top: 269px;
+}
+
+.h3-discography {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.p-discography {
+  font-size: 16px;
+  line-height: 24px;
+  color: #e0e0e0;
+}
+
+.discography-info-one {
+  grid-row: 1/span 1;
+  grid-column: 1/span 1;
+}
+
+.discography-info-two {
+  grid-row: 1/span 1;
+  grid-column: 2/span 1;
+}
+
+.discography-info-three {
+  grid-row: 1/span 1;
+  grid-column: 3/span 1;
+}
+
+.discography-info-four {
+  grid-row: 1/span 1;
+  grid-column: 4/span 1;
+}
+
+.discography-info-five {
+  grid-row: 2/span 1;
+  grid-column: 1/span 1;
+}
+
+.discography-info-six {
+  grid-row: 2/span 1;
+  grid-column: 2/span 1;
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .container {
+    padding: 0 20px 0 20px;
+  }
+
+  .title-discography h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .grid-page-discography {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .img-discography {
+    width: 137px;
+    height: 137px;
+  }
+
+  .img-discography-one {
+    grid-row: 1/span 1;
+    grid-column: 1/span 1;
+  }
+
+  .img-discography-two {
+    grid-row: 1/span 1;
+    grid-column: 2/span 1;
+  }
+
+  .img-discography-three {
+    grid-row: 2/span 1;
+    grid-column: 1/span 1;
+  }
+
+  .img-discography-four {
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+  }
+
+  .img-discography-five {
+    grid-row: 3/span 1;
+    grid-column: 1/span 1;
+  }
+
+  .img-discography-six {
+    grid-row: 3/span 1;
+    grid-column: 2/span 1;
+  }
+
+  .discography-info {
+    margin-top: 151px;
+  }
+
+  .discography-info-one {
+    grid-row: 1/span 1;
+    grid-column: 1/span 1;
+  }
+
+  .discography-info-two {
+    grid-row: 1/span 1;
+    grid-column: 2/span 1;
+  }
+
+  .discography-info-three {
+    grid-row: 2/span 1;
+    grid-column: 1/span 1;
+  }
+
+  .discography-info-four {
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+  }
+
+  .discography-info-five {
+    grid-row: 3/span 1;
+    grid-column: 1/span 1;
+  }
+
+  .discography-info-six {
+    grid-row: 3/span 1;
+    grid-column: 2/span 1;
   }
 }
 
