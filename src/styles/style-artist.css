@@ -606,6 +606,7 @@ li a {
   font-size: 18px;
   line-height: 27px;
   color: #fff;
+  text-transform: capitalize;
 }
 
 .p-discography {
@@ -805,7 +806,7 @@ li a {
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #fff;
   margin-top: 17px;
 }

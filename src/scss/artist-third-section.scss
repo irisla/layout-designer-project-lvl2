@@ -50,14 +50,6 @@
     grid-column: 2 / span 1;
 }
 
-// .h3-discography {
-//     font-weight: bold;
-//     font-size: 18px;
-//     line-height: 27px;
-//     text-transform: uppercase;
-//     color: $font;
-// }
-
 .discography-info {
     margin-top: 269px;
 }
@@ -67,6 +59,7 @@
     font-size: 18px;
     line-height: 27px;
     color: $font;
+    text-transform: capitalize;
 }
 
 .p-discography {
