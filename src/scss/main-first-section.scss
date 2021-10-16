@@ -6,22 +6,23 @@
     padding: 200px 0;
 }
   
-.description-container {
-    @extend %container;  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+// .description-container {
+//     @extend %container;  
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+// }
+ 
+.description-h1 {
+  text-align: center;
 }
-  
+
 .description-h2 {
-    width: 75%;
     text-align: center;
 }
   
 .description-p {
-    margin-top: 31px;
     margin-bottom: 15px;
-    min-width: 900px;
     text-align: center;
     font-size: 16px;
     line-height: 24px;
@@ -64,6 +65,7 @@ input:first-child {
     color: $font;
     margin-top: 24px;
     background: $green;
+    border: none;
 }
   
 // -----------------------------------------------
