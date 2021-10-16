@@ -1,0 +1,101 @@
+@import "../abstracts/functions";
+@import "../abstracts/mixins";
+
+#page-app {
+  max-width: 374px;
+
+  padding: 100px 20px 0 20px;
+
+  h2 {
+    margin-bottom: 48px;
+
+    text-align: center;
+
+    @include get-h2-mobile-style;
+  }
+
+  .flex {
+    flex-direction: column;
+
+    img {
+      max-width: 333px;
+
+      margin: 0 auto 16px auto;
+    }
+
+    .app-description {
+      position: relative;
+
+      order: 2;
+
+      margin: 0 auto;
+
+      p + p {
+        margin-top: 17px;
+      }
+
+      .btn {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+@media (min-width: 843px) {
+  #page-app {
+    max-width: 1200px;
+
+    h2 {
+      @include get-h2-desktop-style;
+    }
+
+    .flex {
+      flex-direction: row;
+
+      max-width: 100%;
+
+      .app-description {
+        top: 0;
+
+        order: 1;
+
+        margin: 0 144px 0 0;
+      }
+
+      img {
+        order: 2;
+
+        max-width: 333px;
+
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-app {
+    h2 {
+      margin-bottom: 0;
+    }
+
+    .flex {
+      .app-description {
+        top: -18px;
+
+        width: 600px;
+
+        margin-top: 63px;
+      }
+
+      p {
+        font-size: 15px;
+        letter-spacing: -0.19px;
+      }
+
+      img {
+        margin: 47px 123px 2px 0;
+      }
+    }
+  }
+}

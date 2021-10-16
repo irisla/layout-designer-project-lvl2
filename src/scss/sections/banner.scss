@@ -1,0 +1,203 @@
+@import "../abstracts/functions";
+
+.banner {
+  h1 {
+    @include get-font-styles(30px, 700);
+  }
+
+  h2 {
+    @include get-h2-mobile-style;
+  }
+
+  &.bg-banner {
+    background-position-x: center;
+    background-size: cover;
+  }
+
+  &.home-banner {
+    padding: 248px 20px 200px 20px;
+
+    background-image: url("../images/banner.png");
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+
+      text-align: center;
+    }
+
+    h2,
+    p {
+      margin-bottom: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-rows: repeat(2, 50px) 57px;
+      gap: 24px;
+
+      .form-control {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 22px;
+
+        color: get-color();
+
+        background-color: transparent;
+
+        border: solid 2px get-color("dark-gray");
+        border-radius: 3px;
+
+        &::-moz-placeholder {
+          color: get-color();
+        }
+
+        &::-webkit-input-placeholder {
+          color: get-color();
+        }
+      }
+    }
+  }
+
+  &.art-banner {
+    display: flex;
+    justify-content: center;
+
+    margin: 0 auto;
+
+    background-image: url("../images/Morten Harket.png");
+
+    #page-description {
+      width: 1200px;
+
+      padding: 225px 20px;
+    }
+
+    h1 {
+      margin: 0 0 16px 0;
+    }
+
+    p {
+      margin: 0 0 48px 0;
+    }
+
+    .flex {
+      flex-direction: column;
+
+      button {
+        img {
+          margin-left: 31px;
+
+          vertical-align: middle;
+
+          filter: invert(1);
+        }
+
+        .play-icon {
+          width: 20px;
+          height: 20px;
+        }
+
+        .favorite-icon {
+          width: 20px;
+          height: 18px;
+        }
+
+        span {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}
+
+// ------ HOME MEDIA ------
+@media (min-width: 375px) {
+  .banner.home-banner {
+    .grid {
+      .form-control {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 414px) {
+  .banner.home-banner {
+    .grid {
+      .form-control {
+        width: 100%;
+        max-width: 374px;
+      }
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .banner.home-banner {
+    padding: 201px 0;
+
+    .grid {
+      display: grid;
+      grid-template-rows: 50px 57px;
+      grid-template-columns: auto repeat(2, 273px) auto;
+      gap: 24px;
+
+      .ctrl-1 {
+        grid-row: 1 / 1;
+        grid-column: 2 / span 1;
+      }
+
+      .ctrl-2 {
+        grid-row: 1 / 1;
+        grid-column: 3 / span 1;
+      }
+    }
+  }
+}
+
+@media (min-width: 807px) {
+  .banner.home-banner {
+    h1 {
+      @include get-font-styles(60px, 700);
+    }
+
+    h2 {
+      margin-bottom: 32px;
+
+      @include get-h2-desktop-style;
+    }
+  }
+}
+
+// ------ ARTIST MEDIA ------
+@media (min-width: 807px) {
+  .banner.art-banner {
+    max-height: 713px;
+
+    &.bg-banner {
+      background-position-x: -533px;
+    }
+
+    #page-description {
+      padding: 249px 20px;
+
+      h1 {
+        @include get-font-styles(60px, 700);
+      }
+
+      .flex {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .banner.art-banner {
+    #page-description {
+      padding: 249px 120px;
+    }
+  }
+}

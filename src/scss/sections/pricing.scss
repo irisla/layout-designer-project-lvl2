@@ -1,0 +1,137 @@
+@import "../abstracts/functions";
+
+#page-pricing {
+  padding: 100px 20px 0 20px;
+
+  h2 {
+    margin-bottom: 47px;
+
+    text-align: center;
+
+    @include get-h2-mobile-style;
+  }
+
+  .common-terms {
+    text-align: center;
+  }
+
+  .flex {
+    justify-content: space-evenly;
+
+    .card {
+      width: 100%;
+      max-width: 374px;
+
+      margin-bottom: 51px;
+
+      text-align: center;
+
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      border-radius: 1rem;
+
+      h3 {
+        margin: 16px 0 184px 0;
+
+        @include get-font-styles(16px, 700);
+      }
+
+      .price {
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 24px;
+
+        .amount {
+          margin-right: 16px;
+
+          @include get-font-styles(64px);
+        }
+
+        span {
+          margin-top: 16px;
+
+          @include get-font-styles(32px);
+        }
+      }
+
+      .btn-container {
+        margin-bottom: 64px;
+        padding: 0 24px;
+      }
+
+      .terms {
+        margin-bottom: 64px;
+        padding: 0 26px;
+
+        @include get-font-styles(12.8px);
+      }
+    }
+
+    .card-1 {
+      background-image: url(../images/subscribe_1.png);
+    }
+
+    .card-2 {
+      background-image: url(../images/subscribe_2.png);
+    }
+
+    .card-3 {
+      margin-bottom: 39px;
+
+      background-image: url(../images/subscribe_3.png);
+    }
+  }
+}
+
+@media (min-width: 843px) {
+  #page-pricing {
+    h2 {
+      @include get-h2-desktop-style;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #page-pricing {
+    .flex {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-pricing {
+    h2 {
+      margin-bottom: 48px;
+    }
+
+    .flex {
+      .card {
+        margin-bottom: 42px;
+
+        background-size: 101%;
+
+        h3 {
+          margin: 21px 0 178px 0;
+
+          @include get-font-styles(24px, 400, 45/24);
+        }
+      }
+
+      .card-1,
+      .card-2,
+      .card-3 {
+        max-width: 368px;
+      }
+    }
+
+    .common-terms {
+      max-width: 1200px;
+
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
