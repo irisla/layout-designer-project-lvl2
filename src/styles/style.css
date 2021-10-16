@@ -61,7 +61,7 @@ body {
 
 .header {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 18px;
   position: absolute;
 }
 
@@ -197,7 +197,7 @@ li a {
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
-  padding: 200px 0;
+  padding: 198px 0;
 }
 
 .description-h1 {
