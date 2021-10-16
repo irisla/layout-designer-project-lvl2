@@ -1,0 +1,26 @@
+.prices {
+  @include gap-50;
+  margin-bottom: 40px;
+
+  .bg-free {
+    background-image: url('../images/subscribe_1.png');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-standart {
+    background-image: url('../images/subscribe_2.png');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-premium {
+    background-image: url('../images/subscribe_3.png');
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.info {
+  @include reset;
+}

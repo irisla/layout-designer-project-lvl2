@@ -1,0 +1,35 @@
+.container {
+  .app-info {
+    flex-direction: row-reverse;
+    gap: 144px;
+    justify-content: flex-end;
+
+    @media (max-width: 1240px) {
+      gap: 12%;
+    }
+
+    @media (max-width: 960px) {
+      gap: 0;
+
+      img {
+        @include centred;
+      }
+    }
+
+    .app-offer {
+      width: 50%;
+
+      text-align: left;
+
+      @media (max-width: 960px) {
+        @include full-width;
+      }
+    }
+
+    .btn-ellipse {
+      padding: 16px 40px;
+
+      border-radius: 32px;
+    }
+  }
+}

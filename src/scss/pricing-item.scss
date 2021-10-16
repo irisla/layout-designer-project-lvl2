@@ -1,0 +1,63 @@
+.pricing-item {
+  box-sizing: border-box;
+  width: calc((100% - 100px) / 3);
+  padding: 1.5rem;
+
+  border-radius: 1rem;
+
+  @media (max-width: 960px) {
+    width: 70%;
+    padding-top: 1rem;
+
+    @include centred;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+
+  h3 {
+    margin-bottom: 199px;
+
+    line-height: 36px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 200px;
+
+      line-height: 24px;
+    }
+  }
+
+  .pricing-value {
+    @extend .text-7;
+
+    @include reset;
+
+    margin-bottom: 40px;
+
+    line-height: 1em;
+
+    span {
+      line-height: 1em;
+      vertical-align: super;
+
+      @include uppercase;
+    }
+  }
+
+  a {
+    display: block;
+
+    @extend %reset-a;
+
+    @include border-1;
+    @include full-width;
+  }
+
+  .pricing-footer {
+    margin-top: 64px;
+    margin-bottom: 42px;
+
+    @extend .text-small;
+  }
+}

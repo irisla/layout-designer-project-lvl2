@@ -1,0 +1,42 @@
+.morten-harket {
+  background-image: url('../images/Morten\ Harket.png');
+  background-position: center;
+  background-size: cover;
+
+  h1 {
+    margin-top: 50px;
+
+    @media (max-width: 600px) {
+      margin-top: 25px;
+    }
+  }
+}
+
+.two-button {
+  margin-top: 3rem;
+  margin-bottom: 23px;
+
+  @include gap-24;
+
+  button {
+    flex-shrink: 0;
+    width: 200px;
+
+    @include uppercase;
+  }
+
+  .btn-purple {
+    background: $purple;
+  }
+}
+
+.btn-with-icon {
+  @include gap-16;
+
+  .icon {
+    width: 20px;
+    height: 20px;
+
+    filter: invert(100%);
+  }
+}

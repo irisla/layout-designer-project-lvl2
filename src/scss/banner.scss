@@ -1,0 +1,19 @@
+.banner {
+  background-image: url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+
+  h1 {
+    @media (max-width: 600px) {
+      margin-top: 48px;
+    }
+  }
+
+  p {
+    margin-top: 32px;
+
+    @media (max-width: 600px) {
+      margin-top: 1rem;
+    }
+  }
+}

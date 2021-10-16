@@ -1,0 +1,35 @@
+.tracks {
+  @include gap-50;
+  @include row-gap-25;
+
+  column-width: calc((100% - 50px) / 2);
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.popular-track {
+  grid-column: span 1;
+  gap: 15px;
+
+  @extend .text-small;
+
+  img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .track-info {
+    width: 100%;
+
+    h3 {
+      font: 700 12.8px/19.2px 'Roboto', sans-serif;
+    }
+
+    p {
+      @include reset;
+      text-transform: capitalize;
+    }
+  }
+}

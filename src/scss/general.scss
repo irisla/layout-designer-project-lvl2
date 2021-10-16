@@ -1,0 +1,165 @@
+@mixin mobil-padding {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@mixin full-width {
+  width: 100%;
+}
+
+@mixin gap-50 {
+  gap: 50px;
+}
+
+@mixin row-gap-25 {
+  row-gap: 25px;
+}
+
+%width-1200 {
+  width: 1200px;
+}
+
+%centred {
+  margin: 0 auto;
+}
+
+@mixin centred {
+  margin: 0 auto;
+}
+
+%gap-16 {
+  gap: 16px;
+}
+
+@mixin gap-16 {
+  gap: 16px;
+}
+
+@mixin gap-24 {
+  gap: 24px;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+@mixin no-gap {
+  gap: 0;
+}
+
+body {
+  @include reset;
+}
+
+h1,
+h2,
+h3 {
+  @include reset;
+}
+
+ul {
+  @include reset;
+}
+
+.first-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.main-sections {
+  width: 1240px;
+  padding-top: 100px;
+
+  @extend %centred;
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+
+  &.last-sections {
+    margin-bottom: 100px;
+  }
+}
+
+header,
+section,
+.last-foot {
+  .container {
+    @extend %width-1200;
+    @extend %centred;
+  }
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+@media (max-width: 1240px) {
+  .main-sections {
+    width: auto;
+  }
+
+  header,
+  section,
+  .last-foot {
+    @include mobil-padding;
+
+    .container {
+      @include full-width;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+
+  &.justify-content-between {
+    justify-content: space-between;
+  }
+
+  &.align-items-center {
+    align-items: center;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.btn {
+  @include reset;
+  box-sizing: border-box;
+  padding: 20px 30px;
+
+  border-radius: 5px;
+}
+
+.grid-2-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-4-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 251px);
+
+  @include gap-50;
+  @include row-gap-25;
+
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(auto-fill, 138px);
+  }
+}

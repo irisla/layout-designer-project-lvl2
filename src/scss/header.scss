@@ -1,0 +1,83 @@
+header {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  left: 0;
+
+  .hat {
+    font-size: 11px;
+    line-height: 13px;
+
+    @extend %gap-16;
+
+    .menu {
+      @extend %gap-16;
+      align-items: center;
+
+      @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo {
+        @include h-style;
+
+        @extend %gap-16;
+        flex-wrap: nowrap;
+        margin-right: 72px;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+
+        p {
+          @include reset;
+        }
+
+        @media (max-width: 960px) {
+          margin-right: 0;
+        }
+      }
+
+      ul {
+        @include gap-24;
+
+        a {
+          @include h-style;
+
+          @extend %reset-a;
+        }
+
+        @media (max-width: 600px) {
+          flex-direction: column;
+          gap: 3px;
+          padding: 1px 0;
+        }
+      }
+    }
+
+    input {
+      @include reset;
+      box-sizing: border-box;
+      width: 248px;
+      height: 25px;
+      padding: 5px 10px;
+
+      background: $dark;
+
+      border-radius: 50px;
+
+      @media (max-width: 960px) {
+        @include full-width;
+      }
+
+      &::placeholder {
+        color: #757575;
+        font: 13px/15px Arial, sans-serif;
+
+        @include uppercase;
+      }
+    }
+  }
+}

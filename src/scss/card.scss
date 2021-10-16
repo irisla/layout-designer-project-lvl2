@@ -1,0 +1,32 @@
+.card {
+  img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 11.5px;
+
+    @media (max-width: 960px) {
+      width: 137px;
+      height: 137px;
+    }
+  }
+
+  h3 {
+    font: 700 18px/27px 'Roboto', sans-serif;
+    text-transform: capitalize;
+  }
+
+  p {
+    @include reset;
+  }
+}
+
+.artists {
+
+  width: 250px;
+
+  text-align: center;
+
+  @media (max-width: 960px) {
+    width: 137px;
+  }
+}
