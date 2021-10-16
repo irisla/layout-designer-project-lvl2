@@ -86,7 +86,7 @@ body {
 
 .music {
   margin-right: 100px;
-  margin-top: 7px;
+  margin-top: 5px;
   font-size: 11px;
   line-height: 16px;
   text-transform: uppercase;
@@ -114,7 +114,7 @@ li a {
 .header-search {
   background: #3c3b3d;
   border-radius: 50px;
-  margin-left: 300px;
+  margin-left: 305px;
 }
 
 .header-input {
@@ -216,13 +216,17 @@ li a {
 }
 
 .description-h2 {
-  width: 50%;
+  width: 75%;
   text-align: center;
 }
 
 .description-p {
   margin-top: 31px;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
+  min-width: 900px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .form-page-description {
@@ -234,7 +238,6 @@ li a {
   min-width: 270px;
   min-height: 50px;
   padding-left: 20px;
-  margin-bottom: 1.5rem;
   border: solid 2px #cacaca;
   border-radius: 3px;
   background: none;
