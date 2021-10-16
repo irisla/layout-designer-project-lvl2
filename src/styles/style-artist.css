@@ -41,12 +41,6 @@ body {
   background: none;
 }
 
-.page-description {
-  background-position: center;
-  background-size: cover;
-  padding: 200px 0;
-}
-
 * {
   margin: 0;
   border: 0;
@@ -212,6 +206,8 @@ li a {
   background-position: center;
   background-size: cover;
   padding-top: 200px;
+  padding-bottom: 200px;
+  min-height: 713px;
 }
 
 .description-container {
@@ -291,10 +287,15 @@ li a {
   #page-description {
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   .description-h1 {
     margin-top: 55px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
   }
 
   .form-page-description {
