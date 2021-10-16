@@ -61,7 +61,7 @@ body {
 
 .header {
   width: 100%;
-  padding-top: 25px;
+  padding-top: 20px;
   position: absolute;
 }
 
@@ -197,7 +197,6 @@ li a {
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
-  min-height: 750px;
   padding: 200px 0;
 }
 
