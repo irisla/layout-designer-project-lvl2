@@ -41,6 +41,12 @@ h1 {
   background: none;
 }
 
+.page-description {
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+}
+
 * {
   margin: 0;
   border: 0;
@@ -86,6 +92,7 @@ body {
 
 .music {
   margin-right: 100px;
+  margin-top: 7px;
   font-size: 11px;
   line-height: 16px;
   text-transform: uppercase;
@@ -200,7 +207,7 @@ li a {
     margin-right: auto;
   }
 }
-.page-description {
+#page-description {
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
@@ -338,7 +345,7 @@ input:first-child {
     width: 100%;
   }
 }
-main {
+.main {
   background: #08020d;
 }
 
@@ -514,6 +521,10 @@ article {
   text-align: center;
   margin-bottom: 48px;
   font-weight: 700;
+}
+
+.main {
+  background: #08020d;
 }
 
 .flex {
@@ -715,10 +726,12 @@ article {
   }
 }
 #page-app {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+}
+
+.main {
+  background: #08020d;
 }
 
 .count-2 {

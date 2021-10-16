@@ -11,126 +11,141 @@
 
 <body>
 
-  <header class="header">
-    <nav>
-      <div class="header-container">
-        <img class="img" src="images/logo.svg" alt="логотип в виде скрипичного ключа">
-        <p class="music">Music Box</p>
-        <ul class="menu">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Исполнители</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <form class="header-search" action="#" method="get">
-          <input class="header-input" name="search" placeholder="поиск" type="search">
-        </form>
+  <main>
+
+    <header class="header">
+      <nav>
+        <div class="header-container">
+          <img class="img" src="images/logo.svg" alt="логотип в виде скрипичного ключа">
+          <p class="music">Music Box</p>
+          <ul class="menu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Исполнители</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+
+          <div class="form-wrapper">
+
+            <form class="header-search" action="#" method="get">
+              <input class="header-input" name="search" placeholder="поиск" type="search">
+            </form>
+
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <section id="page-description">
+      <div class="description-container">
+        <h1 class="description-h1">Онлайн музыка где угодно</h1>
+        <h2 class="description-h2">без ограничений</h2>
+        <p class="description-p">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки
+        </p>
+
+        <div class="form-wrapper">
+
+          <form class="form-page-description" action="#">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Email">
+            <button class="btn button-page-description" type="submit">получить доступ</button>
+          </form>
+
+        </div>
+
       </div>
-    </nav>
-  </header>
-  <section class="page-description">
-    <div class="description-container">
-      <h1 class="description-h1">Онлайн музыка где угодно</h1>
-      <h2 class="description-h2">без ограничений</h2>
-      <p class="description-p">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-      <form class="form-page-description" action="#">
-        <input type="text" placeholder="Имя">
-        <input type="text" placeholder="Email">
-        <button class="btn button-page-description" type="submit">получить доступ</button>
-      </form>
+    </section>
+
+  </main>
+
+  <!-- <main> -->
+  <section id="page-pricing" class="main">
+    <div class="container">
+      <h2>формы подписки</h2>
+      <article>
+        <div class="price-img first">
+          <h3>бесплатная</h3>
+          <p class="price-value">0 <span class="price"><sup>руб.</sup></span></p>
+          <button class="btn button-price-img"><a href="#">оформить</a></button>
+          <p class="price-footer">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки.
+            Присутствует реклама
+          </p>
+        </div>
+        <div class="price-img second">
+          <h3>стандартная</h3>
+          <p class="price-value">250 <span class="price"><sup>руб.</sup></span></p>
+          <button class="btn button-price-img"><a href="#">оформить</a></button>
+          <p class="price-footer">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в
+            среднем качестве
+          </p>
+        </div>
+        <div class="price-img third">
+          <h3>премиум</h3>
+          <p class="price-value">500 <span class="price"><sup>руб.</sup></span></p>
+          <button class="btn button-price-img"><a href="#">оформить</a></button>
+          <p class="price-footer">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в
+            высоком качестве
+          </p>
+        </div>
+      </article>
+      <p class="page-pricing-footer">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум
+        тарифе вы можете скачать все
+        композиции на ваше устройство и слушать музыку без подключения к интернету</p>
     </div>
   </section>
 
-  <main>
-    <section id="page-pricing" class="main">
-      <div class="container">
-        <h2>формы подписки</h2>
-        <article>
-          <div class="price-img first">
-            <h3>бесплатная</h3>
-            <p class="price-value">0 <span class="price"><sup>руб.</sup></span></p>
-            <button class="btn button-price-img"><a href="#">оформить</a></button>
-            <p class="price-footer">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки.
-              Присутствует реклама
+  <section id="page-news" class="main">
+    <div class="container">
+      <h2>последние новости</h2>
+      <div class="flex one">
+        <img class="photo-one" src="images/Music to Be Murdered By.png" alt="фотография исполнителя">
+        <div class="flex-column">
+          <div class="news-body">
+            <h3>Music to Be Murdered By</h3>
+            <p>Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20
+              новых треков.
             </p>
           </div>
-          <div class="price-img second">
-            <h3>стандартная</h3>
-            <p class="price-value">250 <span class="price"><sup>руб.</sup></span></p>
-            <button class="btn button-price-img"><a href="#">оформить</a></button>
-            <p class="price-footer">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в
-              среднем качестве
-            </p>
-          </div>
-          <div class="price-img third">
-            <h3>премиум</h3>
-            <p class="price-value">500 <span class="price"><sup>руб.</sup></span></p>
-            <button class="btn button-price-img"><a href="#">оформить</a></button>
-            <p class="price-footer">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в
-              высоком качестве
-            </p>
-          </div>
-        </article>
-        <p class="page-pricing-footer">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум
-          тарифе вы можете скачать все
-          композиции на ваше устройство и слушать музыку без подключения к интернету</p>
-      </div>
-    </section>
-
-    <section id="page-news">
-      <div class="container">
-        <h2>последние новости</h2>
-        <div class="flex one">
-          <img class="photo-one" src="images/Music to Be Murdered By.png" alt="фотография исполнителя">
-          <div class="flex-column">
-            <div class="news-body">
-              <h3>Music to Be Murdered By</h3>
-              <p>Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20
-                новых треков.
-              </p>
+          <div class="news-footer">
+            <div class="news-author">
+              <img class="avatar" src="images/avatar.png" alt="">
+              <p class="author">Music box</p>
+              <p class="data">17/01/2020</p>
             </div>
-            <div class="news-footer">
-              <div class="news-author">
-                <img class="avatar" src="images/avatar.png" alt="">
-                <p class="author">Music box</p>
-                <p class="data">17/01/2020</p>
-              </div>
-              <button class="btn button-news-footer">
-                <a href="#">К альбому</a>
-              </button>
-            </div>
+            <button class="btn button-news-footer">
+              <a href="#">К альбому</a>
+            </button>
           </div>
         </div>
+      </div>
 
-        <div class="flex">
-          <div class="flex-column down">
-            <div class="news-body">
-              <h3>Ordinary Man</h3>
-              <p>Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на
-                Music Box
-              </p>
-            </div>
-            <div class="news-footer">
-              <div class="news-author">
-                <img class="avatar" src="images/avatar.png" alt="">
-                <p class="author">Music box</p>
-                <p class="data">17/01/2020</p>
-              </div>
-              <button class="btn button-news-footer">
-                <a href="#">К альбому</a>
-              </button>
-            </div>
+      <div class="flex">
+        <div class="flex-column down">
+          <div class="news-body">
+            <h3>Ordinary Man</h3>
+            <p>Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на
+              Music Box
+            </p>
           </div>
-          <img class="photo-two" src="images/Ordinary Man.png" alt="фотография исполнителя">
+          <div class="news-footer">
+            <div class="news-author">
+              <img class="avatar" src="images/avatar.png" alt="">
+              <p class="author">Music box</p>
+              <p class="data">17/01/2020</p>
+            </div>
+            <button class="btn button-news-footer">
+              <a href="#">К альбому</a>
+            </button>
+          </div>
         </div>
-
-
+        <img class="photo-two" src="images/Ordinary Man.png" alt="фотография исполнителя">
       </div>
+    </div>
+  </section>
 
-      </div>
-    </section>
-
-    <section id="page-app">
+  <section id="page-app" class="main">
+    <div class="container">
       <div class="count-2">
         <h2>Мобильное приложение</h2>
         <div class="count-text">
@@ -145,9 +160,9 @@
         </div>
         <img class="count-img" src="images/iphone.png" alt="Три мобильных телефона">
       </div>
-      </div>
-    </section>
-  </main>
+    </div>
+  </section>
+  <!-- </main> -->
 
   <footer>
     <div class="grid-container">
