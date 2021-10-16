@@ -197,7 +197,8 @@ li a {
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
-  padding: 198px 0;
+  padding: 202px 0;
+  min-height: 750px;
 }
 
 .description-h1 {
