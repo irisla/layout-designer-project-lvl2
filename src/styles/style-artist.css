@@ -6,7 +6,7 @@ body {
   color: #fff;
 }
 
-h1 {
+.description-h1, h1 {
   font-size: 60px;
   line-height: 90px;
   font-weight: bold;
@@ -16,13 +16,6 @@ h1 {
 .title-similar, .title-discography, .title-popular-track h2, h2 {
   font-size: 38px;
   line-height: 57px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.description-h1 {
-  font-size: 30px;
-  line-height: 45px;
   font-weight: bold;
   text-transform: uppercase;
 }
